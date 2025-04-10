@@ -12,11 +12,8 @@ body {
 /* Outer Striped Card Border */
 .card-container {
   width: 220px;
-  height: 275px;
+  /* height: 275px; */
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-left: 10px;
   padding-bottom: 10px;
   background: repeating-linear-gradient(120deg,
@@ -31,25 +28,25 @@ body {
 
 /* White Card Box */
 .card {
-  position: absolute;
-  width: 180px;
-  height: 235px;
+  position: relative;
+  width: auto;
+  height: auto;
   padding: 20px;
   background-color: #f5f4f4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ 
   border: 2px solid rgb(5, 5, 116);
   border-top-left-radius: 2px;
   box-shadow: 0 0 0 2px #ccc;
+  
 }
 
-.clamp-text {
+
+/* .clamp-text {
   display: -webkit-box;
   -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}  
+}   */
 
 .tag-container {
   position: absolute;
