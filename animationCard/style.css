@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: #4b05c5;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Outer Striped Card Border */
+.card-container {
+  width: 220px;
+  height: 275px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  background: repeating-linear-gradient(120deg,
+      #61c1e1,
+      #60bbec 5px,
+      #116be90c .5px,
+      #11ade6 8px);
+  border: 2px solid #0524ac;
+  border-start-start-radius:13px;
+  box-shadow: 0 0 0 1px #ccc;
+}
+
+/* White Card Box */
+.card {
+  position: absolute;
+  width: 180px;
+  height: 235px;
+  padding: 20px;
+  background-color: #f5f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(5, 5, 116);
+  border-top-left-radius: 2px;
+  box-shadow: 0 0 0 2px #ccc;
+}
+
+.clamp-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}  
+
+.tag-container {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  width: 180px;
+  height: 60px;
+  background: repeating-linear-gradient(120deg,
+      #0a0a0a,
+      #c42209 5px,
+      #a42505 1px,
+      #f15d66 8px);
+  border: 4px double rgb(5, 5, 116);
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 12px;
+  z-index: 1;
+}
+
+.tag {
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  background-color: #f15d66;
+  color: white;
+  padding: 7px 12px;
+  height: 40px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 6px 6px 0 0;
+  border: 3px solid #0a0a0a;
+  z-index: 2;
+}
